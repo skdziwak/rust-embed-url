@@ -1,0 +1,22 @@
+[package]
+name = "rust-embed-url"
+version = "0.1.0"
+edition = "2024"
+authors = ["Szymon Dziwak <skdziwak@gmail.com>"]
+description = "A procedural macro for embedding URLs at compile time"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/skdziwak/rust-embed-url"
+documentation = "https://docs.rs/rust-embed-url"
+readme = "README.md"
+keywords = ["macro", "url", "embed", "proc-macro", "compile-time"]
+categories = ["development-tools::procedural-macro-helpers"]
+
+[dependencies]
+base64 = "0.23.1"
+quote = "1.0"
+reqwest = { version = "0.13.4", features = ["blocking"] }
+sha2 = "0.11.0"
+syn = "3.0.4"
+
+[lib]
+proc-macro = true
